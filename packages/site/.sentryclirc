@@ -3,5 +3,5 @@ token=eef8b336ec354c18bbc6f29c2de49a11dfa77f55602d46968f6d22da57b8bf0b
 
 [defaults]
 org=health
-project=zarm
+project=zson
 url=https://ets.zhonganinfo.com

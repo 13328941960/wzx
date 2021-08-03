@@ -2,7 +2,7 @@ import { getParameters } from 'codesandbox/lib/api/define';
 import { pascalCase } from 'change-case';
 
 export default ({ code, component, preview }) => {
-  const title = `${component.name} ${pascalCase(component.key)} - Zarm Design`;
+  const title = `${component.name} ${pascalCase(component.key)} - Zson Design`;
   const pageCls = `${component.key}-page`;
   let parsedSourceCode = code;
   let importReactContent = "import React from 'react';";
@@ -18,7 +18,7 @@ export default ({ code, component, preview }) => {
   const indexJsContent = `
 ${importReactContent}
 import ReactDOM from 'react-dom';
-import 'zarm/dist/zarm.css';
+import 'zson/dist/zson.css';
 import './index.css';
 ${parsedSourceCode}
 `.trim();
@@ -41,7 +41,7 @@ ${parsedSourceCode}
           title,
           main: 'index.js',
           dependencies: {
-            zarm: 'latest',
+            zson: 'latest',
             react: '^17',
             'react-dom': '^17',
             'react-scripts': '^4.0.0',

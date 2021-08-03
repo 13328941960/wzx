@@ -6,7 +6,7 @@ import './style.scss';
 const RESOURCES = [
   {
     icon: require('./images/icon-zarm.png'),
-    title: 'Zarm',
+    title: 'zson',
     description: <FormattedMessage id="app.home.resources.type.zarm" />,
     url: 'https://nstatic.zhongan.com/hfe-static/zarm/resources/Zarm.2.0.0-alpha.37.sketch',
   },
@@ -40,7 +40,7 @@ const Page = () => {
   return (
     <>
       <FormattedMessage id="app.home.resources">
-        {(txt) => <Meta title={`${txt} - Zarm Design`} />}
+        {(txt) => <Meta title={`${txt} - Zson Design`} />}
       </FormattedMessage>
       <h1>
         <FormattedMessage id="app.home.resources" />

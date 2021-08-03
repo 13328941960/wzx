@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { IntlProvider, FormattedMessage } from 'react-intl';
-import { Icon, Popup, Radio } from 'zarm';
+import { Icon, Popup, Radio } from 'zson';
 import { Dropdown, Menu } from 'zarm-web';
 import classnames from 'classnames';
 import docsearch from 'docsearch.js';
@@ -9,15 +9,15 @@ import MenuComponent from '@/web/components/Menu';
 import Events from '@/utils/events';
 import Context from '@/utils/context';
 import Locales from '@/locale';
-import pkg from '@zarmDir/package.json';
+import pkg from '@zsonDir/package.json';
 import 'docsearch.js/dist/cdn/docsearch.min.css';
 import './style.scss';
-import 'zarm/style/entry';
+import 'zson/style/entry';
 
 const initDocSearch = () => {
   docsearch({
     apiKey: '44e980b50447a3a5fac9dc2a4808c439',
-    indexName: 'zarm',
+    indexName: 'zson',
     inputSelector: '.search input',
     debug: false,
   });

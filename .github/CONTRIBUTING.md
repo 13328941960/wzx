@@ -9,13 +9,13 @@ Install to fetch its dependencies after git clone the repo.
 $ yarn
 ```
 
-Then, you can runs Zarm Design website locally.
+Then, you can runs Zson Design website locally.
 
 ```bash
 # develop for h5
 $ yarn dev
 
-If you want runs Zarm Design demo for react-native, Then
+If you want runs Zson Design demo for react-native, Then
 # develop for react-native
 $ cd rnkit && yarn install && cd ios && pod install && cd ../..
 
@@ -62,7 +62,7 @@ $ yarn test:h5 --coverage
 
 ## Build
 
-compiles TypeScript code to the lib and es directory, and creates UMD build of zarm in dist directory.
+compiles TypeScript code to the lib and es directory, and creates UMD build of zson in dist directory.
 
 ```bash
 $ yarn build

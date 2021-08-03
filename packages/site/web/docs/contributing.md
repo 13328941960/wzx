@@ -9,14 +9,14 @@
 $ yarn
 ```
 
-然后, 你可以运行 `Zarm Design` 的本地站点。
+然后, 你可以运行 `Zson Design` 的本地站点。
 
 ```bash
 # 开发 h5 端
 $ yarn dev
 ```
 
-如果你想运行 `Zarm Design` 的 `react-native` 示例, 那么
+如果你想运行 `Zson Design` 的 `react-native` 示例, 那么
 
 ```bash
 # 开发 react-native 端

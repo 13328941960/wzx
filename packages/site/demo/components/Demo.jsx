@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useCallback } from 'react';
 import ReactDOM from 'react-dom';
 import { transform } from '@babel/standalone';
-import { Panel } from 'zarm';
-import enUS from 'zarm/config-provider/locale/en_US';
-import zhCN from 'zarm/config-provider/locale/zh_CN';
-import 'zarm/style/entry';
+import { Panel } from 'zson';
+import enUS from 'zson/config-provider/locale/en_US';
+import zhCN from 'zson/config-provider/locale/zh_CN';
+import 'zson/style/entry';
 
 export default ({ location, globalContext, children }) => {
   const containerId = `${parseInt(Math.random() * 1e9, 10).toString(36)}`;
@@ -14,13 +14,13 @@ export default ({ location, globalContext, children }) => {
 
   const renderSource = useCallback(() => {
     const source = document[2].match(/```(.*)\n?([^]+)```/);
-    import('zarm')
+    import('zson')
       .then((Element) => {
         const locale = {
           en_US: enUS,
           zh_CN: zhCN,
         };
-        const args = ['context', 'React', 'ReactDOM', 'Zarm', 'GlobalContext', 'Locale'];
+        const args = ['context', 'React', 'ReactDOM', 'Zson', 'GlobalContext', 'Locale'];
         const argv = [this, React, ReactDOM, Element, globalContext, locale];
         return {
           args,
@@ -30,9 +30,9 @@ export default ({ location, globalContext, children }) => {
       .then(({ args, argv }) => {
         const value = source[2]
           .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'react';/, 'const { $1 } = React;')
-          .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'zarm';/, 'const { $1 } = Zarm;')
+          .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'zson';/, 'const { $1 } = Zson;')
           .replace(
-            /import\s+(.*)\s+from\s+'zarm\/lib\/config-provider\/locale\/(.*)';/g,
+            /import\s+(.*)\s+from\s+'zson\/lib\/config-provider\/locale\/(.*)';/g,
             "const $1 = Locale['$2'];",
           )
           .replace(

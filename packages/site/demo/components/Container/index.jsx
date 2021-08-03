@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import classnames from 'classnames';
-import { Icon, Radio, Popper, ConfigProvider } from 'zarm';
+import { Icon, Radio, Popper, ConfigProvider } from 'zson';
 import Context from '@/utils/context';
 import Events from '@/utils/events';
-import enUS from 'zarm/config-provider/locale/en_US';
-import zhCN from 'zarm/config-provider/locale/zh_CN';
+import enUS from 'zson/config-provider/locale/en_US';
+import zhCN from 'zson/config-provider/locale/zh_CN';
 import './style.scss';
 
 const Icons = Icon.createFromIconfont('//at.alicdn.com/t/font_1340918_uwg522sx17.js');

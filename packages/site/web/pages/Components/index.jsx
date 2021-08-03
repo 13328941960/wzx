@@ -3,7 +3,7 @@ import { Route, Switch, Redirect, useParams, useRouteMatch } from 'react-router-
 import classnames from 'classnames';
 import Loadable from 'react-loadable';
 import { FormattedMessage } from 'react-intl';
-import { Icon } from 'zarm';
+import { Icon } from 'zson';
 import { documents, components } from '@/site.config';
 import Context from '@/utils/context';
 import Container from '@/web/components/Container';

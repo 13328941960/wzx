@@ -31,11 +31,11 @@ export default {
   'app.home.resources': 'Design Resources',
   'app.home.resources.introduce':
     'Please find below some of the design resources and tools about Zson Design that we consider valuable.',
-  'app.home.resources.type.zarm': 'Sketch Symbol for zson',
-  'app.home.resources.type.zarm-web': 'Sketch Symbol for zson-web',
-  'app.home.resources.type.zarm-web-frame': 'Sketch Symbol for zson-web-frame',
-  'app.home.resources.type.zarm-axure': 'Axure library for zson',
-  'app.home.resources.type.zarm-web-axure': 'Axure library for zson-web',
+  'app.home.resources.type.zson': 'Sketch Symbol for zson',
+  'app.home.resources.type.zson-web': 'Sketch Symbol for zson-web',
+  'app.home.resources.type.zson-web-frame': 'Sketch Symbol for zson-web-frame',
+  'app.home.resources.type.zson-axure': 'Axure library for zson',
+  'app.home.resources.type.zson-web-axure': 'Axure library for zson-web',
 
   'app.demo.footer.copyright': 'Zson UX Design',
 };

@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
-import { Loading } from 'zarm';
+import { Loading } from 'zson';
 import { pascalCase } from 'change-case';
 import { components } from '@/site.config';
 import Container from '@/demo/components/Container';

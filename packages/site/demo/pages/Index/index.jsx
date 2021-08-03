@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import { IntlProvider, FormattedMessage } from 'react-intl';
-import { Panel, Cell } from 'zarm';
+import { Panel, Cell } from 'zson';
 import { components } from '@/site.config';
 import { pascalCase } from 'change-case';
 import Container from '@/demo/components/Container';

@@ -30,7 +30,7 @@ return (
 
 ## 深度定制
 
-可以通过修改 zarm 开放出来的 css 变量的方式深度定制你的样式。
+可以通过修改 zson 开放出来的 css 变量的方式深度定制你的样式。
 
 ```js
 document.documentElement.style.setProperty('--theme-primary', '#108ee9');
